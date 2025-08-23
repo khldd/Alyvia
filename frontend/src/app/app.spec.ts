@@ -21,7 +21,7 @@ describe('App', () => {
   it(`should have the 'frontend' title'`, () => {
     const fixture = TestBed.createComponent(App);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('frontend');
+    expect(app.title()).toEqual('frontend');
   });
 
   it('should have a router outlet', () => {

@@ -9,7 +9,8 @@ describe('Layout', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [Layout]
+      declarations: [Layout],
+      imports: [RouterTestingModule]
     })
     .compileComponents();
 
