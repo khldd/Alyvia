@@ -7,13 +7,16 @@ import { Employee } from '../models/employee.model';
   providedIn: 'root'
 })
 export class EmployeeService {
-  // IMPORTANT: Adjust this URL to match your actual backend endpoint
   private apiUrl = 'http://localhost:8080/employees';
 
   constructor(private http: HttpClient) { }
 
-  // This assumes an endpoint like /employees?companyId=...
   getEmployeesByCompany(companyId: number): Observable<Employee[]> {
-    return this.http.get<Employee[]>(`${this.apiUrl}`, { params: { companyId: companyId.toString() } });
+    return this.http.get<Employee[]>(this.apiUrl, { params: { companyId: companyId.toString() } });
+  }
+
+  // Add a new method to create an employee
+  addEmployee(employeeData: Partial<Employee>): Observable<Employee> {
+    return this.http.post<Employee>(this.apiUrl, employeeData);
   }
 }

@@ -16,6 +16,12 @@
         </mat-card-content>
       </mat-card>
 
-  <h3>Employees</h3>
+  <div class="header-container">
+    <h3>Employees</h3>
+    <button mat-fab color="primary" (click)="openAddEmployeeDialog()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+
   <app-employee-list [employees]="employees" [isLoading]="isEmployeesLoading"></app-employee-list>
 </div>

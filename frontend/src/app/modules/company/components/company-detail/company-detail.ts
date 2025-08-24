@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
 import { Company } from '../../models/company.model';
 import { CompanyService } from '../../services/company';
-import { Employee } from '../../../employee/models/employee.model'; // Import Employee model
-import { EmployeeService } from '../../../employee/services/employee'; // Import Employee service
+import { Employee } from '../../../employee/models/employee.model';
+import { EmployeeService } from '../../../employee/services/employee';
+import { EmployeeFormComponent } from '../../../employee/components/employee-form/employee-form'; // Import the form component
 
 @Component({
   selector: 'app-company-detail',
@@ -19,7 +21,8 @@ export class CompanyDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private companyService: CompanyService,
-    private employeeService: EmployeeService // Inject EmployeeService
+    private employeeService: EmployeeService,
+    public dialog: MatDialog // Inject MatDialog
   ) { }
 
   ngOnInit(): void {
@@ -50,5 +53,19 @@ export class CompanyDetailComponent implements OnInit {
         }
       });
     }
+  }
+
+  openAddEmployeeDialog(): void {
+    const dialogRef = this.dialog.open(EmployeeFormComponent, {
+      width: '400px',
+      data: { companyId: this.company?.id } // Pass the companyId to the dialog
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        // If a new employee was created, add it to the list to update the UI instantly
+        this.employees = [...this.employees, result];
+      }
+    });
   }
 }
