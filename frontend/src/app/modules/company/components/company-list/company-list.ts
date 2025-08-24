@@ -4,6 +4,7 @@ import { CompanyService } from '../../services/company';
 
 @Component({
   selector: 'app-company-list',
+  standalone: false,
   templateUrl: './company-list.html',
   styleUrls: ['./company-list.css']
 })

@@ -8,11 +8,26 @@ import { AuthModule } from './modules/auth/auth-module';
 import { CoreModule } from './modules/core/core-module';
 import { LayoutModule } from './modules/layout/layout-module';
 import { SharedModule } from './modules/shared/shared-module';
-import { jwtInterceptor } from './modules/core/interceptors/jwt-interceptor'; // <--- Import the interceptor
+import { jwtInterceptor } from './modules/core/interceptors/jwt-interceptor';
+import {CompanyListComponent} from './modules/company/components/company-list/company-list';
+import {CompanyDetailComponent} from './modules/company/components/company-detail/company-detail';
+import {EmployeeListComponent} from './modules/employee/components/employee-list/employee-list';
+import {EmployeeFormComponent} from './modules/employee/components/employee-form/employee-form';
+import {Login} from './modules/auth/components/login/login';
+import {Register} from './modules/auth/components/register/register';
+import {Layout} from './modules/layout/components/layout/layout';
+import {ReactiveFormsModule} from '@angular/forms'; // <--- Import the interceptor
 
 @NgModule({
   declarations: [
-    App
+    App,
+    CompanyListComponent,
+    CompanyDetailComponent,
+    EmployeeListComponent,
+    EmployeeFormComponent,
+    Login,
+    Register,
+    Layout
   ],
   imports: [
     BrowserModule,
@@ -21,7 +36,8 @@ import { jwtInterceptor } from './modules/core/interceptors/jwt-interceptor'; //
     AuthModule,
     CoreModule,
     LayoutModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideHttpClient(withInterceptors([jwtInterceptor])) // <--- Provide the interceptor

@@ -5,6 +5,7 @@ import { EmployeeService } from '../../services/employee';
 
 @Component({
   selector: 'app-employee-form',
+  standalone: false,
   templateUrl: './employee-form.html',
   styleUrls: ['./employee-form.css']
 })

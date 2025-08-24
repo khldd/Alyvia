@@ -53,7 +53,7 @@ describe('CompanyDetailComponent', () => {
     fixture.detectChanges();
     expect(companyService.getCompanyById).toHaveBeenCalledWith(1);
     expect(component.company).toEqual(mockCompany);
-    expect(component.isLoading).toBeFalse();
+    expect(component.isCompanyLoading).toBeFalse();
   });
 
   it('should handle error when fetching company details', () => {
@@ -61,6 +61,6 @@ describe('CompanyDetailComponent', () => {
     fixture.detectChanges();
     expect(companyService.getCompanyById).toHaveBeenCalledWith(1);
     expect(component.company).toBeNull();
-    expect(component.isLoading).toBeFalse();
+    expect(component.isCompanyLoading).toBeFalse();
   });
 });

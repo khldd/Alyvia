@@ -9,6 +9,7 @@ import { EmployeeFormComponent } from '../../../employee/components/employee-for
 
 @Component({
   selector: 'app-company-detail',
+  standalone: false,
   templateUrl: './company-detail.html',
   styleUrls: ['./company-detail.css']
 })

@@ -3,6 +3,7 @@ import { Auth } from '../../../auth/services/auth';
 
 @Component({
   selector: 'app-layout',
+  standalone: false,
   templateUrl: './layout.html',
   styleUrls: ['./layout.css']
 })

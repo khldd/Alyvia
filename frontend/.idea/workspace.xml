@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f71bbb3b-61fd-408c-b732-4b91fead4602" name="Changes" comment="" />
+    <list default="true" id="f71bbb3b-61fd-408c-b732-4b91fead4602" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/auth/auth-module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/auth/auth-module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/auth/components/login/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/auth/components/login/login.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/company/company-module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/company/company-module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/company/components/company-detail/company-detail.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/company/components/company-detail/company-detail.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/company/components/company-detail/company-detail.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/company/components/company-detail/company-detail.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/company/components/company-list/company-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/company/components/company-list/company-list.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/employee/components/employee-form/employee-form.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/employee/components/employee-form/employee-form.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/employee/components/employee-form/employee-form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/employee/components/employee-form/employee-form.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/employee/components/employee-list/employee-list.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/employee/components/employee-list/employee-list.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/employee/components/employee-list/employee-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/employee/components/employee-list/employee-list.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/employee/employee-module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/employee/employee-module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/layout/components/layout/layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/layout/components/layout/layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/layout/layout-module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/layout/layout-module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/shared/shared-module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/shared/shared-module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +56,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.Angular CLI Server.executor&quot;: &quot;Run&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\ayedi\\Desktop\\Alyvia RH\\frontend\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -70,11 +92,24 @@
       <option name="presentableId" value="Default" />
       <updated>1755862276517</updated>
       <workItem from="1755862279210" duration="860000" />
-      <workItem from="1755863196977" duration="14000" />
+      <workItem from="1755863196977" duration="1291000" />
+      <workItem from="1755967661062" duration="4122000" />
+      <workItem from="1756057700177" duration="6074000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
