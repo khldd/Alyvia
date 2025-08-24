@@ -7,11 +7,16 @@ import { Company } from '../models/company.model';
   providedIn: 'root'
 })
 export class CompanyService {
-  private apiUrl = 'http://localhost:8080/companies'; // Adjust if your backend URL is different
+  private apiUrl = 'http://localhost:8080/companies';
 
   constructor(private http: HttpClient) { }
 
   getCompanies(): Observable<Company[]> {
     return this.http.get<Company[]>(this.apiUrl);
+  }
+
+  // Add a new method to get a single company
+  getCompanyById(id: number): Observable<Company> {
+    return this.http.get<Company>(`${this.apiUrl}/${id}`);
   }
 }

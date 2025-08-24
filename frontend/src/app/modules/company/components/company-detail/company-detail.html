@@ -1,0 +1,25 @@
+<div *ngIf="isLoading" class="spinner-container">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div *ngIf="!isLoading && company">
+  <a routerLink="/companies" mat-button>
+    <mat-icon>arrow_back</mat-icon>
+    Back to Companies
+  </a>
+
+  <mat-card class="details-card">
+    <mat-card-header>
+      <mat-card-title>{{ company.name }}</mat-card-title>
+      <mat-card-subtitle>Company Details</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p><strong>Address:</strong> {{ company.address }}</p>
+      <p><strong>Tax ID:</strong> {{ company.taxId }}</p>
+      <p><strong>Member Since:</strong> {{ company.createdAt | date:'longDate' }}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <h3>Employees</h3>
+  <p>Employee list for {{ company.name }} will be displayed here.</p>
+</div>
