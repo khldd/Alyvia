@@ -1,5 +1,6 @@
-import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'; // <--- Import HttpClientModule
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
@@ -15,14 +16,13 @@ import { SharedModule } from './modules/shared/shared-module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule, // <--- Add it to the imports array
     AuthModule,
     CoreModule,
     LayoutModule,
     SharedModule
   ],
-  providers: [
-    provideBrowserGlobalErrorListeners()
-  ],
+  providers: [],
   bootstrap: [App]
 })
 export class AppModule { }
