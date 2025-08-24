@@ -5,12 +5,14 @@ import { CompanyRoutingModule } from './company-routing-module';
 import { Company } from './company';
 import { CompanyList } from './components/company-list/company-list';
 import { SharedModule } from '../shared/shared-module';
+import { CompanyDetail } from './components/company-detail/company-detail';
 
 
 @NgModule({
   declarations: [
     Company,
-    CompanyList
+    CompanyList,
+    CompanyDetail
   ],
   imports: [
     CommonModule,
