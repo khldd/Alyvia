@@ -20,6 +20,7 @@ const routes: Routes = [
     path: 'register',
     component: Register,
   },
+  { path: 'companies', loadChildren: () => import('./modules/company/company-module').then(m => m.CompanyModule) },
   {
     path: '**',
     redirectTo: '',
